@@ -1,0 +1,39 @@
+// Form variables
+$brand-color: #f5d361;
+$label-color: #444;
+// Form styles
+.form-wrapper {
+    padding: 1.875em;
+    background: $brand-color;
+    font-family: sans-serif;
+}
+
+.form-title {
+    margin: 0;
+    font-size: 2em;
+    line-height: 42px;
+    padding-bottom: 10px;
+}
+
+.search-form__item {
+    padding: 0;
+    border: none;
+}
+
+.search-form__label {
+    display: block;
+    color: $label-color;
+    font-size: 0.875em;
+    line-height: 1.875em;
+}
+
+.search-form__input {
+    width: 90%;
+    padding: 2% 8% 2% 2%;
+    line-height: 15px;
+    background: #FEFEFE;
+    border-color: #a9a9a9;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 0.813em;
+}

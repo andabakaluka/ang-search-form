@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+    <div class="form-wrapper col-xs-12 col-md-6">
+        <h2 class="form-title">Let’s find your ideal car</h2>
+        <form class="search-form">
+            <fieldset class="search-form__item">
+                <label class="search-form__label" lang="en">Pick-up locations</label>
+                <input (input)="onSearchChange($event.target.value)" type="text" placeholder="city, airport, station, region and district..." class="search-form__input" />
+            </fieldset>
+        </form>
+    </div>
+
+    <ul>
+        <span *ngIf="cities?.length == 0 && displayErrorMessage">
+          No results found
+        </span>
+        <li *ngFor="let city of cities">
+            {{ city.city }}
+        </li>
+    </ul>
+</div>
